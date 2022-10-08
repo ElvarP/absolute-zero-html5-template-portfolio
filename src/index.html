@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Absolute zero</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<script type="module" defer src="js/navigation.js"></script>
+
+		<!-- https://fonts.gstatic.com is the font file origin -->
+		<!-- It may not have the same origin as the CSS file (https://fonts.googleapis.com) -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<!-- We use the full link to the CSS file in the rest of the tags -->
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+
+		<noscript>
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" />
+		</noscript>
+	</head>
+	<body class="font-poppins">
+		<header class="bg-white p-4 lg:p-2 sticky top-0 left-0 right-0 z-10 border-b">
+			<div class="max-w-5xl mx-auto flex justify-between">
+				<div class="flex flex-col lg:flex-row lg:justify-between lg:items-center flex-1">
+					<div>
+						<a class="text-xl text-blue-600 font-medium uppercase hover:bg-blue-50 p-3" href="">Absolute Zero</a>
+					</div>
+					<div>
+						<nav id="navigation" class="bg-white text-blue-600 lg:bg-transparent fixed lg:sticky top-10 left-0 right-0 max-h-0 lg:max-h-full overflow-hidden transition-all">
+							<ul id="userClicksNavigationLink" class="flex flex-col lg:flex-row lg:divide-y-0 uppercase lg:p-0 p-4">
+								<li class="py-3 hover:bg-blue-50"><a class="lg:text-sm py-3 lg:py-1 lg:px-2" href="#home">Home</a></li>
+								<li class="py-3 hover:bg-blue-50"><a class="lg:text-sm py-3 lg:py-1 lg:px-2" href="#about">About</a></li>
+								<li class="py-3 hover:bg-blue-50"><a class="lg:text-sm py-3 lg:py-1 lg:px-2" href="#services">Services</a></li>
+								<li class="py-3 hover:bg-blue-50"><a class="lg:text-sm py-3 lg:py-1 lg:px-2" href="#portfolio">Portfolio</a></li>
+								<li class="py-3 hover:bg-blue-50"><a class="lg:text-sm py-3 lg:py-1 lg:px-2" href="#testimonials">Testimonials</a></li>
+								<li class="py-3 hover:bg-blue-50"><a class="lg:text-sm py-3 lg:py-1 lg:px-2" href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<label id="" class="lg:hidden cursor-pointer flex flex-col w-8 h-8 justify-between overflow-hidden">
+					<input id="toggleNavigation" type="checkbox" class="peer appearance-none" />
+					<div class="bg-blue-600 h-[3px] w-8 transition-all origin-left peer-checked:rotate-[42deg]"></div>
+					<div class="bg-blue-600 h-[3px] w-8 transition-all peer-checked:bg-opacity-0"></div>
+					<div class="bg-blue-600 h-[3px] w-8 transition-all origin-left peer-checked:-rotate-[42deg]"></div>
+				</label>
+			</div>
+		</header>
+
+		<main id="home" class="bg-gradient-to-t from-gray-100 to-gray-300 lg:bg-gradient-to-r">
+			<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2">
+				<div class="flex">
+					<img class="object-cover" src="img/elon-musk-3.jpg" alt="" />
+				</div>
+				<div class="flex flex-col gap-4 justify-center p-6 lg:py-40">
+					<h1 class="text-2xl uppercase text-gray-600">This is me</h1>
+					<h1 class="text-5xl uppercase">Elon Musk</h1>
+					<p class="text-gray-800">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet magni reiciendis, alias sit harum eaque at veniam rerum eius accusamus eos quaerat est nihil sapiente ea fugit?
+						Culpa, consequuntur libero.
+					</p>
+					<a
+						class="bg-gradient-to-tr from-blue-600 to-blue-400 p-4 hover:from-blue-700 hover:to-blue-500 active:from-blue-800 active:to-blue-600 px-7 rounded-md text-white w-max uppercase"
+						href="#contact"
+						>Hire Me</a
+					>
+				</div>
+			</div>
+		</main>
+		<section id="about">
+			<div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 py-24">
+				<div class="flex flex-col gap-6">
+					<h1 class="text-5xl uppercase font-semibold">About Myself</h1>
+					<p class="text-gray-800">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat soluta, voluptas velit maxime, minima consectetur dignissimos, maiores voluptates eos facilis quibusdam
+						impedit. Consectetur distinctio labore dolorem aspernatur quo consequuntur quis.
+					</p>
+
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+						<div class="flex flex-col gap-4 border border-gray-200 rounded-sm p-8 group hover:border-blue-500">
+							<div class="icon">
+								<svg
+									class="w-12 h-12 fill-blue-500"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512.015 512.015"
+									style="enable-background: new 0 0 512.015 512.015"
+									xml:space="preserve">
+									<path
+										d="M341.333 273.074c75.281 0 136.533-61.252 136.533-136.533S416.614.008 341.333.008C266.052.008 204.8 61.26 204.8 136.541s61.252 136.533 136.533 136.533zm0-256c65.877 0 119.467 53.589 119.467 119.467s-53.589 119.467-119.467 119.467-119.467-53.589-119.467-119.467 53.59-119.467 119.467-119.467zM507.426 358.408c-9.412-16.316-30.362-21.888-46.089-12.774l-98.219 47.804c-15.266 7.637-30.677 7.637-64.452 7.637-33.015 0-83.422-8.337-83.925-8.414-4.693-.759-9.054 2.372-9.822 7.006-.777 4.651 2.364 9.054 7.006 9.822 2.125.358 52.301 8.653 86.741 8.653 35.43 0 53.214 0 72.004-9.395l98.662-48.051c3.942-2.278 8.542-2.884 12.954-1.707 4.395 1.186 8.081 4.011 10.351 7.953 2.287 3.951 2.893 8.55 1.715 12.954s-4.002 8.081-8.192 10.505l-115.379 71.808c-.239.162-24.858 15.667-80.648 15.667-48.367 0-123.11-41.182-124.186-41.771-.768-.375-19.277-9.429-55.014-9.429-4.71 0-8.533 3.823-8.533 8.533s3.823 8.533 8.533 8.533c31.036 0 47.027 7.467 47.061 7.467v-.009c3.217 1.792 79.334 43.742 132.139 43.742 61.611 0 88.934-17.749 89.839-18.355l114.961-71.552c7.893-4.557 13.542-11.921 15.898-20.719 2.372-8.816 1.152-18.015-3.405-25.908z" />
+									<path
+										d="M341.333 179.208c-9.412 0-17.067-7.654-17.067-17.067 0-4.71-3.814-8.533-8.533-8.533s-8.533 3.823-8.533 8.533c0 15.855 10.914 29.107 25.6 32.922v1.212a8.53 8.53 0 0 0 8.533 8.533 8.53 8.53 0 0 0 8.533-8.533v-1.212c14.686-3.814 25.6-17.067 25.6-32.922 0-18.825-15.309-34.133-34.133-34.133-9.412 0-17.067-7.654-17.067-17.067 0-9.412 7.654-17.067 17.067-17.067 9.412 0 17.067 7.654 17.067 17.067 0 4.71 3.814 8.533 8.533 8.533s8.533-3.823 8.533-8.533c0-15.855-10.914-29.107-25.6-32.922v-1.212a8.53 8.53 0 0 0-8.533-8.533 8.53 8.53 0 0 0-8.533 8.533v1.212c-14.686 3.814-25.6 17.067-25.6 32.922 0 18.825 15.309 34.133 34.133 34.133 9.412 0 17.067 7.654 17.067 17.067 0 9.412-7.654 17.067-17.067 17.067zM59.733 273.074h-51.2c-4.71 0-8.533 3.823-8.533 8.533s3.823 8.533 8.533 8.533h51.2c4.702 0 8.533 3.831 8.533 8.533v187.733c0 4.702-3.831 8.533-8.533 8.533h-51.2c-4.71 0-8.533 3.823-8.533 8.533s3.823 8.533 8.533 8.533h51.2c14.114 0 25.6-11.486 25.6-25.6V298.674c0-14.114-11.486-25.6-25.6-25.6zM110.933 324.274H179.2c9.958 0 26.88 12.698 41.813 23.893 18.722 14.046 36.412 27.307 52.053 27.307h51.2c12.962 0 19.396 5.879 19.567 6.033a8.51 8.51 0 0 0 6.033 2.5 8.509 8.509 0 0 0 6.033-2.5 8.525 8.525 0 0 0 0-12.066c-1.126-1.126-11.605-11.034-31.633-11.034h-51.2c-9.958 0-26.88-12.698-41.813-23.893-18.722-14.046-36.412-27.307-52.053-27.307h-68.267c-4.71 0-8.533 3.823-8.533 8.533s3.823 8.534 8.533 8.534z" />
+									<path d="M42.667 456.541c0-7.057-5.743-12.8-12.8-12.8s-12.8 5.743-12.8 12.8 5.743 12.8 12.8 12.8 12.8-5.743 12.8-12.8z" />
+								</svg>
+							</div>
+							<div class="info">
+								<h1 class="text-3xl font-semibold">$5.7B</h1>
+								<p class="text-gray-700">Total Donated</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4 border border-gray-200 rounded-sm p-8 group hover:border-blue-500">
+							<div class="icon">
+								<svg class="w-12 h-12 stroke-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.8" stroke="currentColor" class="w-6 h-6">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+								</svg>
+							</div>
+							<div class="info">
+								<h1 class="text-3xl font-semibold">6</h1>
+								<p class="text-gray-800">Companies Founded</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4 border border-gray-200 rounded-sm p-8 group hover:border-blue-500">
+							<div class="icon">
+								<svg class="w-12 h-12 stroke-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+							<div class="info">
+								<h1 class="text-3xl font-semibold">250B+</h1>
+								<p class="text-gray-800">Net Worth</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col border border-gray-200 rounded-sm py-8 px-4">
+					<h1 class="text-3xl font-semibold uppercase">Expertise</h1>
+
+					<div class="skills flex flex-col gap-6">
+						<div class="skill">
+							<div class="flex justify-end">
+								<span class="text-sm text-gray-800">Engineering 80%</span>
+							</div>
+							<div class="rounded-full p-1 mt-2 border border-gray-200">
+								<div class="bg-gradient-to-tr from-blue-600 to-blue-400 h-2.5 rounded-full" style="width: 80%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="flex justify-end">
+								<span class="text-sm text-gray-800">Physics 85%</span>
+							</div>
+							<div class="rounded-full p-1 mt-2 border border-gray-200">
+								<div class="bg-gradient-to-tr from-blue-600 to-blue-400 h-2.5 rounded-full" style="width: 85%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="flex justify-end">
+								<span class="text-sm text-gray-800">Designing 75%</span>
+							</div>
+							<div class="rounded-full p-1 mt-2 border border-gray-200">
+								<div class="bg-gradient-to-tr from-blue-600 to-blue-400 h-2.5 rounded-full" style="width: 75%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="flex justify-end">
+								<span class="text-sm text-gray-800">Marketing 90%</span>
+							</div>
+							<div class="rounded-full p-1 mt-2 border border-gray-200">
+								<div class="bg-gradient-to-tr from-blue-600 to-blue-400 h-2.5 rounded-full" style="width: 90%"></div>
+							</div>
+						</div>
+						<div class="skill">
+							<div class="flex justify-end">
+								<span class="text-sm text-gray-800">Work Ethic 95%</span>
+							</div>
+							<div class="rounded-full p-1 mt-2 border border-gray-200">
+								<div class="bg-gradient-to-tr from-blue-600 to-blue-400 h-2.5 rounded-full" style="width: 95%"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="services" class="bg-gray-50 py-24">
+			<div class="max-w-5xl mx-auto px-4">
+				<div class="flex flex-col gap-4 pb-8">
+					<h1 class="text-4xl font-semibold">OFFERINGS TO MY CLIENTS</h1>
+					<p class="text-gray-700">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nam inventore odit consectetur commodi earum mollitia fugiat sed ullam, sunt quisquam porro molestiae debitis
+						officiis doloribus dolore quasi, dicta exercitationem?
+					</p>
+				</div>
+				<div class="flex flex-col gap-4">
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+						<div class="flex flex-col gap-4 border border-gray-200 rounded-sm p-8 group hover:border-blue-500">
+							<div class="icon">
+								<svg
+									class="w-20 h-20 fill-gray-400 group-hover:fill-blue-500"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512.062 512.062"
+									style="enable-background: new 0 0 512.062 512.062"
+									xml:space="preserve">
+									<path
+										d="M25.6 426.698h4.403c4.71 0 8.533-3.823 8.533-8.533s-3.823-8.533-8.533-8.533H25.6c-4.702 0-8.533-3.831-8.533-8.533v-42.667H25.6c4.71 0 8.533-3.823 8.533-8.533s-3.823-8.533-8.533-8.533h-8.533v-25.6c0-4.702 3.831-8.533 8.533-8.533h163.669l15.693 78.473c.811 4.053 4.378 6.861 8.363 6.861.555 0 1.118-.051 1.681-.171 4.625-.922 7.62-5.419 6.69-10.035l-15.019-75.128H349.79c4.719 0 8.533-3.823 8.533-8.533s-3.814-8.533-8.533-8.533h-28.86l10.897-21.786a8.532 8.532 0 0 0-3.823-11.452 8.522 8.522 0 0 0-11.443 3.823l-14.711 29.414H204.8v-76.8c0-4.71-3.823-8.533-8.533-8.533s-8.533 3.823-8.533 8.533v76.8H25.6c-14.114 0-25.6 11.486-25.6 25.6v85.333c0 14.113 11.486 25.599 25.6 25.599zM400.99 392.564c-14.114 0-25.6 11.486-25.6 25.6s11.486 25.6 25.6 25.6c14.123 0 25.6-11.486 25.6-25.6s-11.477-25.6-25.6-25.6zm0 34.134c-4.702 0-8.533-3.831-8.533-8.533s3.831-8.533 8.533-8.533c4.71 0 8.533 3.831 8.533 8.533s-3.823 8.533-8.533 8.533z" />
+									<path
+										d="M76.322 267.585c4.19 1.365 8.764-.674 10.505-4.745l23.202-54.195c7.125-14.242 18.261-20.881 35.038-20.881h119.467c20.727 0 39.876 11.042 52.838 30.729l50.961 67.738c2.236 4.062 12.757 21 32.657 21h25.6c36.617 0 51.14 20.267 56.798 34.133h-14.131c-4.719 0-8.533 3.823-8.533 8.533s3.814 8.533 8.533 8.533h18.347l7.006 43.23c.589 2.261.401 4.036-.58 5.291-1.306 1.707-4.122 2.68-7.706 2.68h-26.283c-4.156-28.902-29.022-51.2-59.051-51.2-32.93 0-59.733 26.795-59.733 59.733s26.803 59.733 59.733 59.733c30.029 0 54.895-22.298 59.051-51.2h26.283c9.054 0 16.589-3.311 21.222-9.318 4.25-5.504 5.513-12.629 3.738-19.243l-8.055-49.911c-5.623-28.066-28.698-58.061-76.638-58.061h-25.6c-11.409 0-17.741-12.22-17.783-12.288a7.79 7.79 0 0 0-.836-1.374l-51.046-67.823c-15.642-23.782-40.61-37.982-66.79-37.982H145.067c-23.313 0-40.243 10.197-50.509 30.771L74.343 248.64c-34.56-14.575-57.276-48.41-57.276-86.477 0-51.755 42.112-93.867 93.867-93.867h179.883c4.156 28.902 29.013 51.2 59.051 51.2H384a8.53 8.53 0 0 0 8.533-8.533v-8.533H435.2a8.53 8.53 0 0 0 8.533-8.533 8.53 8.53 0 0 0-8.533-8.533h-42.667v-51.2H435.2a8.53 8.53 0 0 0 8.533-8.533 8.53 8.53 0 0 0-8.533-8.533h-42.667V8.564A8.53 8.53 0 0 0 384 .031h-34.133c-30.037 0-54.895 22.298-59.051 51.2H110.933C49.758 51.231 0 100.989 0 162.164c0 48.086 30.669 90.454 76.322 105.421zM400.99 460.831c-23.526 0-42.667-19.14-42.667-42.667 0-23.526 19.14-42.667 42.667-42.667 23.526 0 42.667 19.14 42.667 42.667s-19.141 42.667-42.667 42.667zM349.867 17.098h25.6v85.333h-25.6c-23.526 0-42.667-19.14-42.667-42.667s19.14-42.666 42.667-42.666zM332.8 494.964h-17.067c-4.719 0-8.533 3.823-8.533 8.533s3.814 8.533 8.533 8.533H332.8c4.719 0 8.533-3.823 8.533-8.533s-3.814-8.533-8.533-8.533zM503.467 494.964H366.933c-4.719 0-8.533 3.823-8.533 8.533s3.814 8.533 8.533 8.533h136.533c4.719 0 8.533-3.823 8.533-8.533s-3.813-8.533-8.532-8.533zM281.6 494.964H162.133c-4.71 0-8.533 3.823-8.533 8.533s3.823 8.533 8.533 8.533H281.6c4.719 0 8.533-3.823 8.533-8.533s-3.814-8.533-8.533-8.533z" />
+									<path
+										d="M110.933 358.431c-32.939 0-59.733 26.795-59.733 59.733s26.795 59.733 59.733 59.733c30.029 0 54.895-22.298 59.051-51.2h145.673c4.719 0 8.533-3.823 8.533-8.533s-3.814-8.533-8.533-8.533H169.984c-4.156-28.902-29.022-51.2-59.051-51.2zm0 102.4c-23.526 0-42.667-19.14-42.667-42.667 0-23.526 19.14-42.667 42.667-42.667 23.526 0 42.667 19.14 42.667 42.667s-19.14 42.667-42.667 42.667z" />
+									<path
+										d="M110.933 392.564c-14.114 0-25.6 11.486-25.6 25.6s11.486 25.6 25.6 25.6 25.6-11.486 25.6-25.6-11.486-25.6-25.6-25.6zm0 34.134c-4.702 0-8.533-3.831-8.533-8.533s3.831-8.533 8.533-8.533 8.533 3.831 8.533 8.533-3.831 8.533-8.533 8.533zM128 494.964H8.533c-4.71 0-8.533 3.823-8.533 8.533s3.823 8.533 8.533 8.533H128c4.71 0 8.533-3.823 8.533-8.533s-3.823-8.533-8.533-8.533zM247.467 341.365a8.536 8.536 0 0 0 8.533-8.533 8.536 8.536 0 0 0-8.533-8.533h-8.533a8.536 8.536 0 0 0-8.533 8.533 8.536 8.536 0 0 0 8.533 8.533h8.533z" />
+								</svg>
+							</div>
+							<div class="info">
+								<h1 class="text-3xl font-semibold uppercase">Electric Cars</h1>
+								<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4 border border-gray-200 rounded-sm p-8 group hover:border-blue-500">
+							<div class="icon">
+								<svg class="w-20 h-20 fill-gray-400 group-hover:fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.001 511.001">
+									<path
+										d="M255.5 112c-30.603 0-55.5 24.897-55.5 55.5s24.897 55.5 55.5 55.5 55.5-24.897 55.5-55.5-24.897-55.5-55.5-55.5zm0 96c-22.332 0-40.5-18.168-40.5-40.5s18.168-40.5 40.5-40.5 40.5 18.168 40.5 40.5-18.168 40.5-40.5 40.5z" />
+									<path d="M255.5 144a7.5 7.5 0 0 0 0 15c4.687 0 8.5 3.813 8.5 8.5a7.5 7.5 0 0 0 15 0c0-12.958-10.542-23.5-23.5-23.5z" />
+									<path
+										d="m379.812 379.735-47.586-74.389C338.825 241.34 343 186.471 343 159.5c0-55.897-22.646-95.938-41.644-119.686-20.605-25.756-41.134-38.228-41.998-38.746a7.501 7.501 0 0 0-7.718 0c-.864.518-21.393 12.99-41.998 38.746C190.646 63.562 168 103.603 168 159.5c0 26.972 4.176 81.841 10.774 145.847l-47.595 74.403A71.381 71.381 0 0 0 120 418.137V503.5a7.498 7.498 0 0 0 7.499 7.5 7.5 7.5 0 0 0 5.806-2.751l61.127-74.71C198.674 446.112 210.578 455 224.244 455H248v48.5a7.5 7.5 0 0 0 15 0V455h23.756c13.667 0 25.57-8.888 29.813-21.461l61.126 74.71A7.501 7.501 0 0 0 391 503.5v-85.363a71.397 71.397 0 0 0-11.188-38.402zM135 418.137a56.39 56.39 0 0 1 8.824-30.318l37.479-58.59a4697.92 4697.92 0 0 0 9.959 84.496L135 482.489v-64.352zM286.757 440H263V311.5a7.5 7.5 0 0 0-15 0V440h-23.756c-8.239 0-15.259-6.183-16.328-14.381a4656.45 4656.45 0 0 1-13.915-118.782 7.553 7.553 0 0 0-.087-.838C187.237 241.614 183 186.388 183 159.5c0-29.053 6.373-56.004 18.975-80.5H263.5a7.5 7.5 0 0 0 0-15h-52.83a183.342 183.342 0 0 1 10.312-14.346c13.88-17.468 27.928-28.459 34.516-33.129 8.182 5.813 27.891 21.447 44.697 47.475H295.5a7.5 7.5 0 0 0 0 15h13.369C319.846 100.359 328 127.117 328 159.5c0 26.887-4.237 82.116-10.914 146.502a7.579 7.579 0 0 0-.086.826 4653.69 4653.69 0 0 1-13.916 118.791c-1.069 8.199-8.088 14.381-16.327 14.381zM376 482.489l-56.262-68.765a4688.853 4688.853 0 0 0 9.959-84.496l37.469 58.575a56.406 56.406 0 0 1 8.833 30.333v64.353z" />
+								</svg>
+							</div>
+							<div class="info">
+								<h1 class="text-3xl font-semibold uppercase">Rockets</h1>
+								<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4 border border-gray-200 rounded-sm p-8 group hover:border-blue-500">
+							<div class="icon">
+								<svg
+									class="w-20 h-20 fill-gray-400 group-hover:fill-blue-500"
+									xmlns="http://www.w3.org/2000/svg"
+									style="enable-background: new 0 0 488.893 488.893"
+									xml:space="preserve"
+									viewBox="0 0 488.893 488.893">
+									<path
+										d="M392.575 132.498c.555-7.965 2.161-54.19-30.591-90.298C336.597 14.201 298.107 0 247.617 0c-50.375 0-89.476 14.114-116.222 41.941-36.873 38.384-35.314 88.463-35.257 89.82v204.131h38.25v-204.78c0-.364-.755-36.577 24.901-62.979 19.268-19.823 48.979-29.873 88.328-29.873 39.054 0 67.913 9.878 85.775 29.347 23.868 26.02 21.048 62.042 21.028 62.3l-.096 205.986h38.25V132.498z" />
+									<path d="m222 202.018-13.407 57.375h82.668l-13.407-57.375zM188.493 345.455h122.868l-15.634-66.937h-91.6zM154.976 488.893h189.902l-24.576-105.188h-140.75z" />
+								</svg>
+							</div>
+							<div class="info">
+								<h1 class="text-3xl font-semibold uppercase">Tunnels</h1>
+								<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4 border border-gray-200 rounded-sm p-8 group hover:border-blue-500">
+							<div class="icon">
+								<svg
+									class="w-20 h-20 fill-gray-400 group-hover:fill-blue-500"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 488 488"
+									style="enable-background: new 0 0 488 488"
+									xml:space="preserve">
+									<path
+										d="M484.605 311.6c-14.2-48.9-70.801-82.2-131.601-77.3-.2 0-.5.1-.7.1-2.2-7.4-5-13.9-8.5-19.6 7.5-12.3 11.6-27 11.6-42.2 0-17.4-5.3-34-15.4-48.2-8.2-11.6-19-20.6-31.4-26.4 1.2-5.6 1.8-11 1.8-16.3 0-21.9-8.3-42.4-23.3-57.8C272.003 8.5 251.802 0 230.302 0c-21.3 0-38.7 6.9-52.701 21.1-14.499-13.4-36.3-21.1-60.9-21.1-21.5 0-41.7 8.5-56.801 23.9-15 15.4-23.3 35.9-23.3 57.8 0 7.1.9 14.1 2.6 20.8C15.2 117.6 0 144.3 0 172.6c0 14.8 4.4 29.6 12.4 42.4C4.2 228.5 0 242.9 0 257.9c0 27.7 14.8 54 38.4 68.9-1 5.3-1.8 10.8-1.8 16.4 0 44.6 35.9 81 80.101 81 24.5 0 46.4-7.7 60.901-21.1 14 14.2 31.4 21.1 52.701 21.1 18.1 0 34.8-5.8 48.8-16.7 16.2 13.8 37 23.7 60.601 27.9l-7.9 40.7c-.8 4.2 1.1 8.5 4.8 10.6 1.5.9 3.3 1.3 5 1.3 2.4 0 4.7-.8 6.6-2.5l61.701-54.4c57-18.2 89-69.2 74.7-119.5zM230.302 404c-19.3 0-33-6.9-44.6-22.3-1.9-2.5-4.9-4-8-4h-.1c-3.2 0-6.2 1.6-8 4.2-11.5 16.3-34.8 22.1-52.801 22.1-33.2 0-60.101-27.3-60.101-61 0-6.1 1.4-12.6 2.8-19.4.9-4.4-1.2-9-5.3-11-20.7-10.5-34.2-32-34.2-54.9 0-13 4.2-25.6 12.6-37.2 2.6-3.6 2.5-8.4-.2-11.9-7.9-10.3-12.4-23.5-12.4-36.2 0-23.7 14-45.8 35.6-56.4 4.6-2.3 6.8-7.7 4.9-12.6-2.6-6.7-3.9-14.3-3.9-21.9 0-34.1 27-61.8 60.101-61.8 18 0 41.3 5.8 52.8 22.1 1.8 2.6 4.8 4.2 8 4.2s6.2-1.4 8.1-4c11.5-15.4 25.3-22.3 44.6-22.3 33.2 0 60.101 27.7 60.101 61.8 0 6.1-1 12-3.3 19.3-1.7 5.2 1.2 10.8 6.4 12.5 24.7 8.2 41.9 32.4 41.9 59.1 0 13.5-4.1 26.3-11.7 36.2-2.8 3.6-2.7 8.6.1 12.2 3.5 4.5 6.4 10 8.5 16.6-15.5 3.6-29.9 9.9-42.5 18.4-.3.2-.7.4-1 .7-.4.3-.9.6-1.3.9-5.1 3.6-10 7.5-14.4 11.8-18.5 18-28.8 41.1-29.3 64.9v1c0 13.1 2.9 25.7 8.3 37.3.1.3.3.6.4.8.2.5.5.9.7 1.4 3.1 6.4 7 12.6 11.6 18.3-9.899 7.3-21.7 11.1-34.4 11.1zm171.702 8.4a9.5 9.5 0 0 0-3.8 2.1l-41.2 36.4 4.3-22.2c.5-2.8-.1-5.6-1.8-7.9-1.7-2.3-4.2-3.7-7-4-36.1-3.6-65.801-22.5-79.801-48.2l-1.2-2.4c-.1-.2-.2-.3-.2-.5-4.7-9.6-7.2-20.2-7.2-30.9.7-29.4 21.1-55.9 50.8-70.1 9.6-4.5 20.2-7.7 31.5-9.5.5-.1 1-.2 1.5-.4 2.3-.3 4.5-.6 6.8-.7 51.6-4.1 99.201 23 110.801 62.9 11.301 40.2-15.9 81.2-63.5 95.4z" />
+								</svg>
+							</div>
+							<div class="info">
+								<h1 class="text-3xl font-semibold uppercase">Brain Transfer</h1>
+								<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4 border border-gray-200 rounded-sm p-8 group hover:border-blue-500">
+							<div class="icon">
+								<svg
+									class="w-20 h-20 fill-gray-400 group-hover:fill-blue-500"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512 512"
+									style="enable-background: new 0 0 512 512"
+									xml:space="preserve">
+									<path
+										d="M480.831 330.665c-25.593-25.592-62.724-36.336-97.931-28.623l-34.521-34.521 105.458-105.459 46.179-46.179c7.683-7.683 11.914-17.934 11.914-28.861 0-10.929-4.232-21.179-11.914-28.862l-46.172-46.173C446.16 4.304 435.909.072 424.982.072c-10.929 0-21.179 4.231-28.864 11.916L244.482 163.623l-34.521-34.521c7.715-35.204-3.03-72.338-28.623-97.93-28.7-28.7-70.452-38.493-108.962-25.557a8.172 8.172 0 0 0-5.351 5.875 8.164 8.164 0 0 0 2.176 7.643l56.211 56.211-10.439 39.622-39.625 10.425-56.21-56.209a8.172 8.172 0 0 0-13.519 3.173c-12.946 38.517-3.155 80.276 25.551 108.982 25.593 25.592 62.727 36.337 97.93 28.623l17.195 17.194a8.145 8.145 0 0 0 5.775 2.393c2.09 0 4.181-.797 5.775-2.393a8.167 8.167 0 0 0 0-11.551l-20.437-20.437a8.162 8.162 0 0 0-7.883-2.116c-30.932 8.259-64.194-.654-86.804-23.264-21.015-21.015-30.048-50.3-25.007-78.926l49.399 49.399a8.17 8.17 0 0 0 7.853 2.124l48.768-12.83a8.166 8.166 0 0 0 5.82-5.819l12.286-46.633 31.071-31.071c20.283 22.471 28.003 54.035 20.137 83.496a8.166 8.166 0 0 0 2.116 7.883l37.764 37.764L48.636 359.469a8.266 8.266 0 0 0-.601.675c-.047.059-.088.122-.134.182a8.964 8.964 0 0 0-.39.555c-.046.072-.087.146-.13.22a7.324 7.324 0 0 0-.419.811c-.088.198-.169.4-.241.603-.017.05-.042.098-.059.148L.489 501.18a8.169 8.169 0 0 0 10.331 10.333l138.52-46.173c.051-.017.099-.042.15-.06a7.71 7.71 0 0 0 .841-.352c.193-.094.382-.197.568-.307.074-.044.148-.085.221-.131.189-.12.374-.252.554-.389.061-.046.124-.087.183-.135.233-.186.46-.386.675-.601L336.828 279.07l37.764 37.764a8.167 8.167 0 0 0 7.883 2.116c30.935-8.258 64.195.655 86.804 23.264 21.008 21.009 30.043 50.285 25.01 78.904l-49.398-49.399a8.172 8.172 0 0 0-7.858-2.123l-48.767 12.848a8.166 8.166 0 0 0-5.818 5.82l-12.268 46.632-31.083 31.083c-20.289-22.472-28.013-54.039-20.146-83.504a8.172 8.172 0 0 0-2.115-7.883l-20.439-20.438a8.168 8.168 0 0 0-11.552 11.551L302.04 382.9c-7.715 35.204 3.03 72.339 28.622 97.93.669.669 1.344 1.324 2.027 1.972.169.205.347.404.539.596.325.325.673.607 1.035.865 19.847 18.112 45.202 27.737 71.236 27.736 11.386 0 22.906-1.842 34.147-5.62a8.167 8.167 0 0 0 3.173-13.519l-56.21-56.21 10.425-39.625 39.624-10.439 56.21 56.211a8.17 8.17 0 0 0 13.52-3.176c12.934-38.505 3.142-80.257-25.557-108.956zM134.505 61.337 90.882 17.712c24.785-4.36 50.056 1.839 70.028 17.22l-26.405 26.405zm273.165-37.8c4.598-4.598 10.746-7.13 17.312-7.13 6.564 0 12.713 2.532 17.311 7.13l46.172 46.173c9.546 9.546 9.546 25.077 0 34.622l-40.397 40.397-80.795-80.795 40.397-40.397zM21.153 490.849l13.742-41.224 27.483 27.483-41.225 13.741zm58.552-19.517L40.67 432.298l17.311-51.933 73.656 73.656-51.932 17.311zm67.052-25.292-80.796-80.796 258.977-258.976 34.623 34.621-241.666 241.667a8.167 8.167 0 0 0 0 11.551 8.145 8.145 0 0 0 5.775 2.393c2.09 0 4.181-.797 5.775-2.393L371.11 152.443l17.311 17.31a8.15 8.15 0 0 0 5.776 2.393 8.14 8.14 0 0 0 5.776-2.393 8.167 8.167 0 0 0 0-11.551l-23.085-23.085-40.4-40.4 19.231-19.231 80.795 80.795L146.757 446.04zm274.385 48.248c-24.785 4.362-50.061-1.83-70.039-17.209l26.414-26.414 43.625 43.623z" />
+									<path
+										d="M183.615 148.961a8.167 8.167 0 0 0-11.551 0l-23.102 23.102a8.167 8.167 0 0 0 0 11.551c1.594 1.594 3.685 2.393 5.775 2.393s4.181-.797 5.775-2.393l23.102-23.102a8.166 8.166 0 0 0 .001-11.551zM363.041 328.389a8.168 8.168 0 0 0-11.552 0l-23.102 23.102a8.167 8.167 0 0 0 5.776 13.944c2.089 0 4.18-.798 5.775-2.393l23.102-23.102a8.166 8.166 0 0 0 .001-11.551z" />
+								</svg>
+							</div>
+							<div class="info">
+								<h1 class="text-3xl font-semibold uppercase">Engineering</h1>
+								<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+							</div>
+						</div>
+						<div class="flex flex-col gap-4 border border-gray-200 rounded-sm p-8 group hover:border-blue-500">
+							<div class="icon">
+								<svg
+									class="w-20 h-20 fill-gray-400 group-hover:fill-blue-500"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 491.52 491.52"
+									style="enable-background: new 0 0 491.52 491.52"
+									xml:space="preserve">
+									<path
+										d="m488.52 238.52-40.96-40.96-14.48 14.48 23.48 23.48h-47.479c-2.333-37.457-17.236-71.483-40.628-97.973l33.607-33.604v33.206h20.48V79.225c0-5.655-4.585-10.24-10.24-10.24h-57.93v20.48h33.209l-33.606 33.602C327.483 99.674 293.458 84.772 256 82.439V34.96l23.48 23.48 14.48-14.48L253 3c-4-4-10.48-4-14.48 0l-40.96 40.96 14.48 14.48 23.48-23.48v47.479c-37.458 2.333-71.483 17.236-97.973 40.629l-33.606-33.602h33.209v-20.48H79.22c-5.655 0-10.24 4.585-10.24 10.24v57.925h20.48v-33.206l33.607 33.604c-23.393 26.49-38.295 60.516-40.628 97.973H34.96l23.48-23.48-14.48-14.48L3 238.52c-4 4-4 10.48 0 14.48l40.96 40.96 14.48-14.48L34.96 256h47.479c2.333 37.457 17.236 71.482 40.629 97.972L89.46 387.58v-33.21H68.98v57.93c0 5.655 4.585 10.24 10.24 10.24h57.93v-20.48h-33.21l33.607-33.607c26.49 23.392 60.516 38.296 97.973 40.629v47.479l-23.48-23.48-14.48 14.48 40.96 40.96c2 2 4.62 3 7.24 3s5.24-1 7.24-3l40.96-40.96-14.48-14.48L256 456.56v-47.479c37.457-2.333 71.482-17.236 97.972-40.629l33.608 33.607h-33.21v20.48h57.93c5.655 0 10.24-4.585 10.24-10.24v-57.93h-20.48v33.21l-33.607-33.608c23.392-26.49 38.296-60.516 40.629-97.972h47.479l-23.48 23.48 14.48 14.48L488.52 253c4-4 4-10.48 0-14.48zM192.921 112.616c-8.081 10.579-15.124 23.518-20.827 38.396-6.821-4.105-13.339-8.755-19.472-14.018a143.43 143.43 0 0 1 40.299-24.378zm-54.837 38.808c8.568 7.503 17.758 14.052 27.506 19.543-5.367 19.478-8.638 41.278-9.394 64.553H102.92c2.284-32.107 15.14-61.271 35.164-84.096zM102.919 256h53.276c.752 23.148 3.994 44.833 9.31 64.229-9.789 5.522-19.013 12.111-27.608 19.661-19.92-22.795-32.699-51.881-34.978-83.89zm49.497 98.338c6.157-5.304 12.7-9.995 19.556-14.131 5.723 15.008 12.813 28.045 20.95 38.697a143.396 143.396 0 0 1-40.506-24.566zm83.104 32.961c-18.216-5.866-34.321-26.942-45.111-56.608 14.222-5.951 29.427-9.465 45.111-10.568v67.176zm0-87.656c-17.766 1.093-35.008 4.884-51.171 11.416-4.291-16.81-6.979-35.453-7.689-55.059h58.86v43.643zm0-64.123h-58.86c.714-19.739 3.429-38.506 7.771-55.404 16.141 6.513 33.353 10.296 51.089 11.386v44.018zm0-64.498c-15.641-1.1-30.806-4.591-44.994-10.513 10.791-29.498 26.844-50.442 44.994-56.288v66.801zm103.38-34.025c-6.132 5.264-12.653 9.909-19.474 14.016-5.703-14.878-12.746-27.817-20.828-38.396a143.355 143.355 0 0 1 40.302 24.38zM256 104.221c18.152 5.846 34.207 26.793 44.998 56.296-14.186 5.921-29.354 9.405-44.998 10.504v-66.8zm0 87.28c17.739-1.091 34.95-4.878 51.089-11.389 4.343 16.899 7.057 35.668 7.771 55.408H256v-44.019zM256 256h58.86c-.709 19.607-3.397 38.249-7.689 55.06-16.162-6.53-33.402-10.324-51.171-11.416V256zm0 131.299v-67.176c15.687 1.102 30.894 4.609 45.114 10.559-10.791 29.672-26.896 50.75-45.114 56.617zm42.599-8.395c8.138-10.652 15.227-23.691 20.951-38.699 6.854 4.136 13.401 8.824 19.559 14.129a143.41 143.41 0 0 1-40.51 24.57zm55.027-39.017c-8.596-7.552-17.819-14.144-27.609-19.666 5.314-19.394 8.556-41.076 9.307-64.221H388.6c-2.277 32.007-15.056 61.093-34.974 83.887zM335.325 235.52c-.756-23.273-4.027-45.072-9.393-64.548 9.749-5.492 18.938-12.042 27.505-19.547 20.023 22.826 32.879 51.989 35.164 84.095h-53.276z" />
+								</svg>
+							</div>
+							<div class="info">
+								<h1 class="text-3xl font-semibold uppercase">Internet</h1>
+								<p class="text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="portfolio">
+			<div class="max-w-5xl mx-auto px-4 py-24">
+				<div class="flex flex-col gap-4 pb-8">
+					<h1 class="text-4xl font-semibold">Portfolio</h1>
+					<p class="text-gray-700">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nam inventore odit consectetur commodi earum mollitia fugiat sed ullam, sunt quisquam porro molestiae debitis
+						officiis doloribus dolore quasi, dicta exercitationem?
+					</p>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+					<div class="item relative rounded-sm flex group hover:outline hover:outline-2 hover:outline-blue-500 cursor-pointer transition-all">
+						<div class="image">
+							<img class="object-cover h-full rounded-sm group-hover:opacity-25 transition-all" src="img/tesla-5.jpg" alt="" />
+						</div>
+						<div class="info absolute bottom-0 p-6 group-hover:text-blue-600">
+							<h1 class="text-2xl font-bold uppercase group-hover:text-blue-500 transition-all">Tesla</h1>
+							<p class="text-neutral-900 group-hover:text-blue-600 transition-all">Automotive Industry</p>
+						</div>
+					</div>
+					<div class="item relative rounded-sm flex group hover:outline hover:outline-2 hover:outline-blue-500 cursor-pointer transition-all">
+						<div class="image">
+							<img class="object-cover h-full rounded-sm group-hover:opacity-25 transition-all" src="img/spacex-4.jpg" alt="" />
+						</div>
+						<div class="info absolute bottom-0 p-6 group-hover:text-blue-600">
+							<h1 class="text-2xl font-bold uppercase group-hover:text-blue-500 transition-all">SpaceX</h1>
+							<p class="text-neutral-900 group-hover:text-blue-600 transition-all">Science</p>
+						</div>
+					</div>
+					<div class="item relative rounded-sm flex group hover:outline hover:outline-2 hover:outline-blue-500 cursor-pointer transition-all">
+						<div class="image">
+							<img class="object-cover h-full rounded-sm group-hover:opacity-25 transition-all" src="img/starlink-2.webp" alt="" />
+						</div>
+						<div class="info absolute bottom-0 p-6 group-hover:text-blue-600">
+							<h1 class="text-2xl font-bold uppercase group-hover:text-blue-500 transition-all">Starlink</h1>
+							<p class="text-neutral-900 group-hover:text-blue-600 transition-all">Internet</p>
+						</div>
+					</div>
+					<div class="item relative rounded-sm flex group hover:outline hover:outline-2 hover:outline-blue-500 cursor-pointer transition-all">
+						<div class="image">
+							<img class="object-cover h-full rounded-md group-hover:opacity-25 transition-all" src="img/solar-city-4.jpg" alt="" />
+						</div>
+						<div class="info absolute bottom-0 p-6 group-hover:text-blue-600">
+							<h1 class="text-2xl font-bold uppercase group-hover:text-blue-500 transition-all">Solar City</h1>
+							<p class="text-neutral-900 group-hover:text-blue-600 transition-all">Renewables</p>
+						</div>
+					</div>
+					<div class="item relative rounded-sm flex group hover:outline hover:outline-2 hover:outline-blue-500 cursor-pointer transition-all">
+						<div class="image">
+							<img class="object-cover object-left h-full rounded-md group-hover:opacity-25 transition-all" src="img/the-boring-company-5.webp" alt="" />
+						</div>
+						<div class="info absolute bottom-0 p-6 group-hover:text-blue-600">
+							<h1 class="text-2xl font-bold uppercase group-hover:text-blue-500 transition-all">The Boring Company</h1>
+							<p class="text-neutral-900 group-hover:text-blue-600 transition-all">Infastructure</p>
+						</div>
+					</div>
+					<div class="item relative rounded-sm flex group hover:outline hover:outline-2 hover:outline-blue-500 cursor-pointer transition-all">
+						<div class="image">
+							<img class="object-cover h-full rounded-md group-hover:opacity-25 transition-all" src="img/twitter-2.jpg" alt="" />
+						</div>
+						<div class="info absolute bottom-0 p-6 group-hover:text-blue-600">
+							<h1 class="text-2xl font-bold uppercase group-hover:text-blue-500 transition-all">Twitter</h1>
+							<p class="text-neutral-900 group-hover:text-blue-600 transition-all">Social Media</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="testimonials" class="bg-gray-50">
+			<div class="max-w-5xl mx-auto px-4 py-24">
+				<div class="flex flex-col gap-4 pb-8">
+					<h1 class="text-4xl font-semibold">Testimonials</h1>
+					<p class="text-gray-700">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae nam inventore odit consectetur commodi earum mollitia fugiat sed ullam, sunt quisquam porro molestiae debitis
+						officiis doloribus dolore quasi, dicta exercitationem?
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+					<div class="item flex flex-col gap-2 bg-white p-10 border border-gray-200 hover:border-blue-500">
+						<p class="text-gray-800">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatum, minima autem id corporis dolore quibusdam libero officia nihil temporibus sunt tempore reprehenderit
+							sapiente repudiandae vitae doloremque ratione! Qui, illum.
+						</p>
+						<h1 class="text-2xl font-bold uppercase">Bill Gates</h1>
+						<div class="rating flex flex-row">
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 stroke-amber-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+							</svg>
+						</div>
+					</div>
+					<div class="item flex flex-col gap-2 bg-white p-10 border border-gray-200 hover:border-blue-500">
+						<p class="text-gray-800">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatum, minima autem id corporis dolore quibusdam libero officia nihil temporibus sunt tempore reprehenderit
+							sapiente repudiandae vitae doloremque ratione! Qui, illum.
+						</p>
+						<h1 class="text-2xl font-bold uppercase">Jeff Bezos</h1>
+						<div class="rating flex flex-row">
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 stroke-amber-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+							</svg>
+						</div>
+					</div>
+					<div class="item flex flex-col gap-2 bg-white p-10 border border-gray-200 hover:border-blue-500">
+						<p class="text-gray-800">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatum, minima autem id corporis dolore quibusdam libero officia nihil temporibus sunt tempore reprehenderit
+							sapiente repudiandae vitae doloremque ratione! Qui, illum.
+						</p>
+						<h1 class="text-2xl font-bold uppercase">Larry Page</h1>
+						<div class="rating flex flex-row">
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 fill-amber-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+								<path
+									fill-rule="evenodd"
+									d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+									clip-rule="evenodd" />
+							</svg>
+							<svg class="w-6 h-6 stroke-amber-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="max-w-5xl mx-auto px-4 py-24">
+				<div class="border p-12 bg-gray-50">
+					<div class="flex flex-col gap-4 pb-8">
+						<h1 class="text-4xl font-semibold">Contact</h1>
+						<p class="text-gray-700">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis ipsa sequi est eveniet ullam alias, laboriosam magnam quis? Odio voluptatibus nesciunt ad, eveniet labore
+							itaque ipsa velit facilis exercitationem! Aliquid?
+						</p>
+					</div>
+					<form class="flex flex-col gap-4">
+						<div class="flex flex-col gap-1">
+							<label class="uppercase text-xl text-blue-500 font-bold" for="name">Name</label>
+							<input class="border border-gray-300 p-3" id="name" name="name" type="text" placeholder="John Doe" />
+						</div>
+						<div class="flex flex-col gap-1">
+							<label class="uppercase text-xl text-blue-500 font-bold" for="email">Email</label>
+							<input class="border border-gray-300 p-3" id="email" name="email" type="email" placeholder="JohnDoe@gmail.com" />
+						</div>
+						<div class="flex flex-col gap-1">
+							<label class="uppercase text-xl text-blue-500 font-bold" for="subject">Subject</label>
+							<input class="border border-gray-300 p-3" id="subject" name="subject" type="text" placeholder="I have a genius idea for you!" />
+						</div>
+						<div class="flex flex-col gap-1">
+							<label class="uppercase text-xl text-blue-500 font-bold" for="message">Message</label>
+							<textarea class="border border-gray-300 p-3" id="message" name="message" type="text" placeholder="Don't tell anyone but the idea is..." rows="4"></textarea>
+						</div>
+						<div class="flex flex-col gap-1">
+							<input class="cursor-pointer bg-blue-500 p-3 hover:bg-blue-600 active:bg-blue-700 px-7 rounded-md text-white w-max uppercase" type="submit" value="Send Message" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer id="footer" class="bg-gray-50 border-t border-gray-200">
+			<div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-10 py-12 px-4">
+				<div class="item flex flex-col gap-4 lg:col-span-2">
+					<h3 class="text-2xl font-bold">About</h3>
+					<p class="text-gray-600">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, iusto ipsa debitis qui blanditiis vero consectetur praesentium quia similique dolorem magnam harum. Maiores
+						assumenda quod provident deserunt odio? Consequatur, fugit.
+					</p>
+				</div>
+				<div class="item flex flex-col gap-4 lg:col-span-2">
+					<h3 class="text-2xl font-bold">Contact</h3>
+					<p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos, optio dolorum eaque explicabo ut voluptas odio rem a nam.</p>
+					<div class="flex flex-col gap-2">
+						<div class="home flex flex-row items-center gap-2">
+							<div class="icon p-2 rounded-full bg-blue-500 border">
+								<svg class="w-6 h-6 inline fill-blue-50 stroke-blue-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+									<path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+									<path
+										d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+								</svg>
+							</div>
+							<p class="text-blue-500 font-semibold">Palo Alto, CA 94304, 3500 Deer Creek</p>
+						</div>
+						<div class="mail flex flex-row items-center gap-2">
+							<div class="icon p-2 rounded-full bg-blue-500 border">
+								<svg class="w-6 h-6 inline fill-blue-50 stroke-blue-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+									<path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+									<path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+								</svg>
+							</div>
+							<p class="text-blue-500 font-semibold">Press@tesla.com</p>
+						</div>
+						<div class="phone flex flex-row items-center gap-2">
+							<div class="icon p-2 rounded-full bg-blue-500 border">
+								<svg class="w-6 h-6 inline fill-blue-50 stroke-blue-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+									<path
+										fill-rule="evenodd"
+										d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+										clip-rule="evenodd" />
+								</svg>
+							</div>
+							<p class="text-blue-500 font-semibold">1-800-613-8840</p>
+						</div>
+					</div>
+				</div>
+				<div class="item flex flex-col gap-4 col-span-1">
+					<h3 class="text-2xl font-bold">Socials</h3>
+					<div class="socials flex flex-col gap-3">
+						<div class="facebook flex flex-row items-center gap-2 cursor-pointer group">
+							<div class="icon p-2 rounded-full bg-gray-700 group-hover:bg-gray-900">
+								<svg class="w-6 h-6 fill-blue-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" style="enable-background: new 0 0 310 310" xml:space="preserve">
+									<path
+										d="M81.703 165.106h33.981V305a5 5 0 0 0 5 5H178.3a5 5 0 0 0 5-5V165.765h39.064a5 5 0 0 0 4.967-4.429l5.933-51.502a5 5 0 0 0-4.966-5.572h-44.996V71.978c0-9.732 5.24-14.667 15.576-14.667h29.42a5 5 0 0 0 5-5V5.037a5 5 0 0 0-5-5h-40.545A39.746 39.746 0 0 0 185.896 0c-7.035 0-31.488 1.381-50.804 19.151-21.402 19.692-18.427 43.27-17.716 47.358v37.752H81.703a5 5 0 0 0-5 5v50.844a5 5 0 0 0 5 5.001z" />
+								</svg>
+							</div>
+							<a class="text-gray-900" href="">Facebook</a>
+						</div>
+						<div class="twitter flex flex-row items-center gap-2 cursor-pointer group">
+							<div class="icon p-2 rounded-full bg-gray-700 group-hover:bg-gray-900">
+								<svg class="w-6 h-6 fill-blue-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" style="enable-background: new 0 0 310 310" xml:space="preserve">
+									<path
+										d="M302.973 57.388a117.512 117.512 0 0 1-14.993 5.463 66.276 66.276 0 0 0 13.494-23.73 5 5 0 0 0-7.313-5.824 117.994 117.994 0 0 1-34.878 13.783c-12.381-12.098-29.197-18.983-46.581-18.983-36.695 0-66.549 29.853-66.549 66.547 0 2.89.183 5.764.545 8.598C101.163 99.244 58.83 76.863 29.76 41.204a5.001 5.001 0 0 0-8.196.642c-5.896 10.117-9.013 21.688-9.013 33.461 0 16.035 5.725 31.249 15.838 43.137a56.37 56.37 0 0 1-8.907-3.977 5 5 0 0 0-7.427 4.257c-.007.295-.007.59-.007.889 0 23.935 12.882 45.484 32.577 57.229a57.372 57.372 0 0 1-5.063-.735 4.998 4.998 0 0 0-5.699 6.437c7.29 22.76 26.059 39.501 48.749 44.605-18.819 11.787-40.34 17.961-62.932 17.961a120.4 120.4 0 0 1-14.095-.826 5 5 0 0 0-3.286 9.174c29.023 18.609 62.582 28.445 97.047 28.445 67.754 0 110.139-31.95 133.764-58.753 29.46-33.421 46.356-77.658 46.356-121.367 0-1.826-.028-3.67-.084-5.508 11.623-8.757 21.63-19.355 29.773-31.536a5 5 0 0 0-6.182-7.351z" />
+								</svg>
+							</div>
+							<a class="text-gray-900" href="">Twitter</a>
+						</div>
+						<div class="twitter flex flex-row items-center gap-2 cursor-pointer group">
+							<div class="icon p-2 rounded-full bg-gray-700 group-hover:bg-gray-900">
+								<svg class="w-6 h-6 fill-blue-50" xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 1024 1024">
+									<path
+										d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1 717.1 625.5 717.1 512 625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7 645.3 438.6 645.3 512 585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9 47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1-18.2-7.3-31.8-16.1-45.8-30.2-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9 7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2 14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z" />
+								</svg>
+							</div>
+							<a class="text-gray-900" href="">Instagram</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="text-gray-600 max-w-5xl mx-auto pb-6 px-4">Code by <a href="">elvarp.is</a></p>
+		</footer>
+	</body>
+</html>
